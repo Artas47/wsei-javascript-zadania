@@ -40,3 +40,35 @@ function printTable(tab){
 
 printTable([1,2,3,4])
 
+
+// ZADANIE 4
+
+function multiply(tab){
+    var sum= 1;
+    for(let i = 0; i<= tab.length ; i++){
+        sum = sum * tab[i];
+    }
+    console.log(sum);
+
+}
+
+multiply([1,2,3,4,5,6,7]);
+
+
+//ZADANIE 5
+
+function getEvenAvarage(arr) {
+    var sum = 0;
+    let found = 0;
+    for(let i of arr){
+        if(i % 2 ==0){
+            sum = sum + i;
+            found++;
+        }
+    }
+    const avg = sum/found;
+    console.log(found == 0 ? null:avg)
+    return found == 0 ? null: avg
+}
+
+getEvenAvarage([1,2,3,4,5,6]);
