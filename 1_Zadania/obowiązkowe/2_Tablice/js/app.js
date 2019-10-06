@@ -29,3 +29,14 @@ for(var i = 0; i<fruits.length; i++){
 }
 
 
+// ZADANIE 3 
+
+function printTable(tab){
+
+    for(let i = 0; i<= tab.length ; i++){
+        console.log(tab[i])
+    }
+}
+
+printTable([1,2,3,4])
+

@@ -1,12 +1,16 @@
 
-function createArray(number) {
-    var newArray = [10];
+//ZADANIE 2
 
-    for (var counter = 1; ; counter <= number) {
+function createArray(number) {
+    var newArray = [];
+
+    for (var counter = 1; counter <= number; counter++) {
+        if(number <= 0) break;
         newArray.push(counter);
     }
+    console.log(newArray.length)
 
-    return newArray[2];
+    return newArray;
 }
 
 console.log("tablica z liczbami do 6 = " + createArray(6));
