@@ -1,25 +1,23 @@
-
 /**
  * Zagniezdzanie funkcji.
  * Przesledz krok po kroku kazda linijke kodu. Kazda!
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-//Twoj komentarz ...
+//deklarujemy funkcje
 function sortArray() {
+  //tworzymy tablice liczb
+  var points = [41, 3, 6, 1, 114, 54, 64];
 
-    //Twoj komentarz ...
-    var points = [41, 3, 6, 1, 114, 54, 64];
+  //na tablicy wywolujemy metode sort do sortowania
+  points.sort(function(a, b) {
+    //zwracamy posortowane wartosci rosnaco
+    return a - b;
+  });
 
-    //Twoj komentarz ...
-    points.sort(function (a, b) {
-        //Twoj komentarz ...
-        return a - b;
-    });
-
-    //Twoj komentarz ...
-    return points;
+  //zwrananie tablicy posportowanej
+  return points;
 }
 
-//Twoj komentarz ...
+//wywolanie funkcji
 sortArray();

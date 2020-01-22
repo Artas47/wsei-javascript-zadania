@@ -4,29 +4,28 @@
  * Napisz komentarze dla kazdej z linijek kodu
  */
 
-
-//Twoj komentarz ...
+//daklarujemy funkcje
 function jeden() {
+  //deklarujemy zmienna1 i przypisujemy wartosc
+  var zmienna1 = 1;
 
-    //Twoj komentarz ...
-    var zmienna1 = 1;
+  //deklaturemy druga funkcje
+  function dwa() {
+    //console logujemy zmienna1
+    console.log(zmienna1);
 
-    //Twoj komentarz ...
-    function dwa() {
+    //deklarujemy zmienna2 i przypisujemy wartosc
+    var zmienna2 = 3;
+  }
 
-        //Twoj komentarz ...
-        console.log(zmienna1);
+  //wywolujemy funkcje dwa
+  dwa();
 
-        //Twoj komentarz ...
-        var zmienna2 = 3;
-    }
-
-    //Twoj komentarz ...
-    dwa();
-
-    //Twoj komentarz ...
-    console.log(zmienna2)
+  //console logujemy zmienna 2
+  // ale zmienna 2 jest zadeklrowana przez var i dlatego jest function scoped
+  // dlatego nie jest tutaj dostepna
+  console.log(zmienna2);
 }
 
-//Twoj komentarz ...
-jeden()
+//wywolanie funkcji jeden
+jeden();
