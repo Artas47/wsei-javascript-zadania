@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
   var a = document.getElementById("a");
   var b = document.getElementById("b");
 
@@ -6,15 +6,14 @@ document.addEventListener("DOMContentLoaded", function () {
   // addEventListener to właśnie document)
   console.log("obiekt document: ", this);
 
-  a.addEventListener("click", function (event) {
+  a.addEventListener("click", function(event) {
     // Tutaj this wskazuje na element DOM o id a
     console.log("a: ", this);
   });
 
-  b.addEventListener("click", function (event) {
+  b.addEventListener("click", function(event) {
     // Tutaj this wskazuje na element DOM o id b
     console.log("b: ", this);
-
 
     function innerFuncOne() {
       // Tutaj this wskazuje na element Window, bo funkcja została
@@ -22,7 +21,8 @@ document.addEventListener("DOMContentLoaded", function () {
       console.log("innerFuncOne: ", this);
     }
     innerFuncOne();
-
+    /*jako parametr w funkcji innerFuncOne przekazać "this"
+      spowoduje to ze będziemy mieli dostęp do "właściwego" "this"
+    */
   });
-
-})
+});
